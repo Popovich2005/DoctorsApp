@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		3AC800AE2CDB857600C14209 /* DoctorsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC800AD2CDB857600C14209 /* DoctorsAppApp.swift */; };
-		3AC800B02CDB857600C14209 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC800AF2CDB857600C14209 /* ContentView.swift */; };
+		3AC800B02CDB857600C14209 /* DoctorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC800AF2CDB857600C14209 /* DoctorView.swift */; };
 		3AC800B22CDB857E00C14209 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AC800B12CDB857E00C14209 /* Assets.xcassets */; };
 		3AC800B52CDB857E00C14209 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AC800B42CDB857E00C14209 /* Preview Assets.xcassets */; };
+		3AC800BD2CDB864700C14209 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC800BC2CDB864700C14209 /* Model.swift */; };
+		3AC800C22CDB88B000C14209 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC800C12CDB88B000C14209 /* URLConstants.swift */; };
+		3AC800C42CDB898600C14209 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC800C32CDB898600C14209 /* NetworkError.swift */; };
+		3AC800C62CDB89BD00C14209 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC800C52CDB89BD00C14209 /* NetworkManager.swift */; };
+		3AC800C92CDB8E8100C14209 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC800C82CDB8E8100C14209 /* ViewModel.swift */; };
+		3AC800CC2CDCB3EB00C14209 /* DoctorRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC800CB2CDCB3EB00C14209 /* DoctorRowView.swift */; };
+		3AC800CF2CDCCE3000C14209 /* DoctorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC800CE2CDCCE3000C14209 /* DoctorDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3AC800AA2CDB857600C14209 /* DoctorsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC800AD2CDB857600C14209 /* DoctorsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsAppApp.swift; sourceTree = "<group>"; };
-		3AC800AF2CDB857600C14209 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3AC800AF2CDB857600C14209 /* DoctorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorView.swift; sourceTree = "<group>"; };
 		3AC800B12CDB857E00C14209 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AC800B42CDB857E00C14209 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3AC800BC2CDB864700C14209 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3AC800C12CDB88B000C14209 /* URLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
+		3AC800C32CDB898600C14209 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		3AC800C52CDB89BD00C14209 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3AC800C82CDB8E8100C14209 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		3AC800CB2CDCB3EB00C14209 /* DoctorRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorRowView.swift; sourceTree = "<group>"; };
+		3AC800CE2CDCCE3000C14209 /* DoctorDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,12 @@
 		3AC800AC2CDB857600C14209 /* DoctorsApp */ = {
 			isa = PBXGroup;
 			children = (
+				3AC800CD2CDCB57100C14209 /* DoctorDetailsViews */,
+				3AC800CA2CDCB38F00C14209 /* DoctorsListViews */,
+				3AC800C72CDB8E5400C14209 /* ViewModel */,
+				3AC800C02CDB888A00C14209 /* Network */,
+				3AC800BB2CDB862C00C14209 /* Model */,
 				3AC800AD2CDB857600C14209 /* DoctorsAppApp.swift */,
-				3AC800AF2CDB857600C14209 /* ContentView.swift */,
 				3AC800B12CDB857E00C14209 /* Assets.xcassets */,
 				3AC800B32CDB857E00C14209 /* Preview Content */,
 			);
@@ -65,6 +83,49 @@
 				3AC800B42CDB857E00C14209 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3AC800BB2CDB862C00C14209 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3AC800BC2CDB864700C14209 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3AC800C02CDB888A00C14209 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3AC800C12CDB88B000C14209 /* URLConstants.swift */,
+				3AC800C32CDB898600C14209 /* NetworkError.swift */,
+				3AC800C52CDB89BD00C14209 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3AC800C72CDB8E5400C14209 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3AC800C82CDB8E8100C14209 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3AC800CA2CDCB38F00C14209 /* DoctorsListViews */ = {
+			isa = PBXGroup;
+			children = (
+				3AC800AF2CDB857600C14209 /* DoctorView.swift */,
+				3AC800CB2CDCB3EB00C14209 /* DoctorRowView.swift */,
+			);
+			path = DoctorsListViews;
+			sourceTree = "<group>";
+		};
+		3AC800CD2CDCB57100C14209 /* DoctorDetailsViews */ = {
+			isa = PBXGroup;
+			children = (
+				3AC800CE2CDCCE3000C14209 /* DoctorDetailView.swift */,
+			);
+			name = DoctorDetailsViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +198,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AC800B02CDB857600C14209 /* ContentView.swift in Sources */,
+				3AC800CF2CDCCE3000C14209 /* DoctorDetailView.swift in Sources */,
+				3AC800C62CDB89BD00C14209 /* NetworkManager.swift in Sources */,
+				3AC800BD2CDB864700C14209 /* Model.swift in Sources */,
+				3AC800C22CDB88B000C14209 /* URLConstants.swift in Sources */,
+				3AC800B02CDB857600C14209 /* DoctorView.swift in Sources */,
+				3AC800CC2CDCB3EB00C14209 /* DoctorRowView.swift in Sources */,
 				3AC800AE2CDB857600C14209 /* DoctorsAppApp.swift in Sources */,
+				3AC800C42CDB898600C14209 /* NetworkError.swift in Sources */,
+				3AC800C92CDB8E8100C14209 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +348,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +378,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
